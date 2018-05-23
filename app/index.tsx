@@ -1,9 +1,7 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import * as DOM from 'react-dom';
+import Header from './components/Header';//Add new import
 
-import { Hello } from "./components/Hello";
+const root = document.getElementById('app');
 
-ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("example")
-);
+DOM.render(<Header />, root);
