@@ -1,19 +1,21 @@
 import * as React from 'react';
 import * as ReactDOM from "react-dom";
+import {MenuItemProps} from './interfaces';
 
-export default class MenuItem extends React.Component<any, any> {
-    constructor(props: any){
+export class MenuItem extends React.Component<MenuItemProps, any> {
+    constructor(props: MenuItemProps){
         super(props);
 
        this.props = {
-            menuName: this.props.menuName
+            menuName: this.props.menuName,
+            //menuItemSelector: this.props.menuItemSelector
         }
     }
 
     public render() {
         return (
             <li className = "ts-menu-item" >
-                <a href="#">{ this.props.menuName }</a>
+                <a href="#" className = "ts-link">{ this.props.menuName }</a>
             </li>
         );
     }
