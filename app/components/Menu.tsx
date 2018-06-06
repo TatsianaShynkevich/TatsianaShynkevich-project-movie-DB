@@ -12,19 +12,19 @@ export class Menu extends React.Component<any, any> {
         return (
             <ul className = "ts-menu-header">
                 <li className="ts-menu-item" >
-					<Link className="ts-header-link" to="/add-movie">Add movie</Link>
+					<Link className="ts-link" to="/add-movie">Add movie</Link>
 				</li>
 				<li className="ts-menu-item" >
-                    <Link className="ts-header-link" to="/about">About</Link>
+                    <Link className="ts-link" to="/about">About</Link>
                 </li>
                 <li className="ts-menu-item" >
-					<Link className="ts-header-link" to="/pricing">Pricing</Link>
+					<Link className="ts-link" to="/pricing">Pricing</Link>
 				</li>
 				<li className="ts-menu-item" >
-                    <Link className="ts-header-link" to="/blog">Blog</Link>
+                    <Link className="ts-link" to="/blog">Blog</Link>
                 </li>
                 <li className="ts-menu-item" >
-					<Link className="ts-header-link" to="/login">Login</Link>
+					<Link className="ts-link" to="/login">Login</Link>
 				</li>
             </ul>
         );

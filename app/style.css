@@ -12,7 +12,7 @@
 }
 
 .ts-wrapper__sidebar {
-    width: 10%;
+    min-width: 5%;
     height: 100%;
 }
 
@@ -27,8 +27,25 @@
     display: flex;
 }
 
+.ts-sidebar-open {
+
+}
+
+.ts-sidebar-closed {
+    display: none;
+}
+
 .ts-sidebar-logos {
     color: #e2e2e4;
+}
+
+.ts-sidebar-logo {
+    height: 25px;;
+}
+
+.ts-sidebar-logos_inner {
+    display: flex;
+    flex-direction: column;
 }
 
 .ts-menu-sidebar {
@@ -43,7 +60,8 @@
 
 .ts-hidden-sidebar__inner {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
+    margin: 20px; 
 }
 
 .ts-header {
@@ -97,13 +115,15 @@
     color: azure;
 }
 
+
+ 
 .ts-link {
     text-decoration: underline;
     color: azure;
 }
 
 .ts-link:visited {
-    color: greenyellow;
+    color: rgb(27, 76, 122);
 }
 
 .ts-link:hover {
@@ -146,4 +166,3 @@
 .ts-film-image {
 
 }
-
